@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@200,300;0,400;0,500;0,600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 
 :root {
   --bg-black-900: #f2f2fc;
@@ -7,6 +8,26 @@
   --text-black-900: #303e4d;
   --text-black-800: #504e70;
   --text-black-700: rgba(17, 7, 254, 0.7);
+  --prim-color: yellow;
+}
+
+html {
+  /* font-size: 80%; */
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: white;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--prim-color);
+  border-radius: 50px;
 }
 
 * {
@@ -16,16 +37,16 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .btn {
   display: inline-block;
   font-size: 1.2rem;
   border: none;
-  border-radius: 50px;
-  background-color: aquamarine;
-  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: var(--prim-color);
+  padding: 0.5rem 1rem;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
 }
@@ -141,7 +162,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   z-index: 100;
   background: linear-gradient(rgba(17, 7, 254, 0.7), rgba(0, 224, 254, 0.7));
 }
@@ -154,13 +175,20 @@ body {
   right: 1rem;
   height: 0.1rem;
   border-radius: 2px;
-  background-color: var(--bg-black-900);
+  background-color: var(--prim-color);
 }
 
 .nav-bar .logo img {
   flex: 0 0 20%;
   border-radius: 50%;
   width: 5rem;
+}
+
+#menu-btn {
+  display: none;
+  font-size: 2.5rem;
+  color: var(--white);
+  cursor: pointer;
 }
 
 .nav-bar nav {
@@ -179,6 +207,22 @@ body {
 
 .nav-bar nav ul.nav-left {
   flex: 0 0 70%;
+}
+
+.nav-bar nav ul.nav-left li a {
+  position: relative;
+  transition: all 0.26s ease;
+}
+
+.nav-bar nav ul.nav-left li:hover a::before {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  top: 30%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--prim-color);
+  border-radius: 50%;
 }
 
 .nav-bar nav ul.nav-right {
@@ -206,14 +250,17 @@ body {
 
 .nav-bar nav ul li a {
   text-decoration: none;
+  font-size: 0.8rem;
   font-weight: bold;
+  font-family: "Nunito", sans-serif;
   color: var(--bg-black-900);
   padding: 0.3rem 0.5rem;
+  text-transform: uppercase;
   transition: all 0.25s ease-in-out;
 }
 
-.nav-bar nav ul li a:hover {
-  transform: scale(1.1);
+.nav-bar nav ul li:hover a {
+  font-size: 0.9rem;
 }
 
 /* Hero Section */
@@ -222,7 +269,7 @@ body {
   /* background-image: url("https://xqsuperschool.org/rethinktogether/wp-content/uploads/sites/5/2021/05/pexels-pixabay-267885.jpg"); */
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  height: 100vh;
   padding: 1rem 2rem;
   z-index: 50;
 
@@ -242,23 +289,51 @@ body {
 .hero-content {
   position: relative;
 
-  max-width: 50rem;
-  padding-left: 8rem;
-  padding-top: 2rem;
-  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  padding: 0 10rem;
+}
+
+.hero-content .hero-text1 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--bg-black-100);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
 }
 
 .hero-content h1 {
+  font-family: "Nunito", sans-serif;
   font-size: 4rem;
   font-weight: 800;
   line-height: 70px;
   color: var(--bg-black-900);
+  text-transform: uppercase;
   margin-bottom: 2rem;
+
+  position: relative;
 }
 
-.hero-content p {
+.hero-content h1::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -0.7rem;
+  bottom: 2px;
+  width: 0.2rem;
+  background-color: var(--prim-color);
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.hero-content .hero-text2 {
   font-size: 1.2rem;
   font-weight: 300;
+  width: 50vw;
   color: var(--bg-black-100);
   margin-bottom: 4rem;
 }
@@ -273,19 +348,25 @@ body {
 
 /* Section 2 */
 
-.section-2, .section-2 .card {
-  display: flex;
-  justify-content: space-between;
+.section-2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
   align-items: center;
-  max-width: 80%;
-  margin: auto;
-  padding: 4rem 2rem;
+
+  padding: 5rem;
+}
+
+.section-2 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-2 .card i {
   font-size: 3.5rem;
   margin-right: 1rem;
-  color: var(--text-black-700);
+  color: var(--prim-color);
 }
 
 .section-2 .card .number {
@@ -311,7 +392,7 @@ body {
   position: relative;
 }
 
-.section-3  .text {
+.section-3 .text {
   font-size: 2rem;
   font-weight: 700;
   color: var(--bg-black-900);
@@ -320,6 +401,7 @@ body {
   position: relative;
 }
 
+/* COURSES SECTION */
 .courses-section {
   padding: 2rem;
 }
@@ -333,15 +415,14 @@ body {
 }
 
 .courses-section .courses {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
   gap: 1rem;
-  padding: 0 3rem;
 }
 
 .courses-section .course {
-  flex: 0 0 30%;
+  
   background-color: var(--bg-black-50);
   text-align: center;
   padding: 1rem;
@@ -361,23 +442,76 @@ body {
   color: var(--text-black-800);
 }
 
+/* COURSES Mate SECTION */
+.course-mate-section {
+  padding: 2rem;
+}
+
+.course-mate-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.course-mate-section .course-mate {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.course-mate-section .course {
+  
+  background-color: var(--bg-black-50);
+  text-align: center;
+  padding: 1rem;
+}
+
+.course-mate-section .course img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.course-mate-section .course h3 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.course-mate-section .course p {
+  color: var(--text-black-800);
+}
+
+/* PICTURE SECTION */
+.picture-section {
+  height: 70vh;
+
+  background-image: url("https://xqsuperschool.org/rethinktogether/wp-content/uploads/sites/5/2021/05/pexels-pixabay-267885.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 footer .footer-sec1 {
   display: flex;
-  align-items: center;
-  padding: 2rem 4rem;
+  align-items: end;
+  justify-content: space-between;
+  padding: 2rem;
   background-color: var(--text-black-700);
 }
 
 footer .footer-sec1 p {
-  flex: 0 0 40%;
+  flex:  0 0 80%;
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--bg-black-900);
 }
 
 footer .footer-sec1 button {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: white;
   background-color: var(--text-black-700);
   padding: 0.5rem 1rem;
@@ -387,22 +521,16 @@ footer .footer-sec1 button {
 footer .footer-sec2 {
   display: flex;
   align-items: start;
+  justify-content: space-around;
   padding: 2rem;
-  margin-bottom: 2rem;
-}
-
-footer .footer-sec2 .footer-logo {
-  flex: 0 0 30%;
-  padding-left: 2rem;
+  background-color: rgba(0, 0, 0, 0.918);
+  color: white;
 }
 
 footer .footer-sec2 .footer-logo img {
   width: 10rem;
   border-radius: 50%;
-}
-
-footer .footer-sec2 .foot-links {
-  flex: 0 0 40%;
+  
 }
 
 footer .footer-sec2 .foot-title {
@@ -419,22 +547,16 @@ footer .footer-sec2 .foot-text {
 footer .footer-sec2 a {
   display: block;
   letter-spacing: 0.3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
-
 footer .footer-sec3 {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-
   display: flex;
   justify-content: space-around;
   color: var(--bg-black-900);
+  background-color: rgba(0, 0, 0, 0.918);
   align-items: center;
-  background: linear-gradient(rgba(17, 7, 254, 0.7), rgba(0, 224, 254, 0.7));
-  padding: 1rem 4rem;
+  padding: 0 4rem 1rem;
 }
 
 footer .footer-sec3 .social-links {
@@ -451,7 +573,7 @@ footer .footer-sec3 .social-links h4 {
 
 footer .footer-sec3 .social-links i {
   display: inline-block;
-  background-color: green;
+  background-color: var(--prim-color);
   border-radius: 5px;
   transition: all 0.25s ease;
   padding: 0.3rem;
@@ -460,4 +582,234 @@ footer .footer-sec3 .social-links i {
 
 footer .footer-sec3 .social-links i:hover {
   background-color: aquamarine;
+}
+
+footer .footer-sec4 {
+  background-image: linear-gradient(
+      228deg,
+      rgba(0, 166, 255, 0.55),
+      hsla(240, 100%, 20%, 0.8)
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Hibbing_High_School_2014.jpg/1200px-Hibbing_High_School_2014.jpg");
+  background-position-y: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  padding: 8rem;
+  text-align: center;
+  height: 50vh;
+}
+
+.footer-sec4 h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.footer-sec4 p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+/* MEdia querys */
+
+@media (max-width: 1300px) {
+  .nav-bar nav {
+    flex: 0 0 70%;
+  }
+
+  .hero-content {
+    padding: 4rem 2rem 0 3rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 90%;
+  }
+
+  .nav-bar nav {
+    flex: 0 0 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* SECTION 2 */
+  .section-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-2 .card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  #menu-btn {
+    display: inline;
+  }
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: var(--black);
+
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-content {
+    background-color: rebeccapurple;
+    padding: 4rem 0 0 1rem;
+  }
+
+  .hero-content .hero-text2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    width: 90%;
+    color: var(--bg-black-100);
+    margin-bottom: 4rem;
+  }
+
+  /* SECTION 2 */
+  /* .section-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  } */
+
+  /* SECTION 3 */
+  .section-3 {
+    padding: 5rem 2rem;
+  }
+
+  .section-3 .text {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  /* FOOTER SECTION */
+  
+footer .footer-sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+footer .footer-sec2 .foot-title {
+  font-size: 1.9rem;
+  margin-top: 1rem;
+}
+
+footer .footer-sec3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+footer .footer-sec4  {
+  height: 40vh;
+  padding: 5rem 2rem 2rem;
+}
+
+footer .footer-sec4 h3 {
+   font-size: 1.5rem;
+   line-height: 25px;
+}
+
+footer .footer-sec4 p {
+  font-size: 1rem;
+  font-weight: normal;
+}
+}
+
+@media (max-width: 430px) {
+  .hero-section {
+    padding: 0;
+  }
+
+  .hero-content {
+    background-color: #303e4d;
+    padding: 0 2rem;
+    padding-top: 8rem;
+  }
+
+  .hero-content .hero-text1 {
+    font-size: 0.7rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+    line-height: 40px;
+  }
+
+  .hero-content .hero-text2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  /* SECTION 2 */
+  .section-2 {
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .section-2 .card {
+    background-color: var(--prim-color);
+    margin-bottom: 1rem;
+  }
+
+ 
+  /* SECTION 3 */
+  .section-3 {
+    padding: 5rem 1rem;
+  }
+
+  .section-3 .text {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bg-black-900);
+    text-align: center;
+  
+    position: relative;
+  }
 }

@@ -22,31 +22,9 @@
     <title>FUTO</title>
   </head>
   <body>
-    <!-- Login Section -->
-    <!-- <section class="login">
-      <div class="login-logo">
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/006/174/322/original/academy-badge-logo-free-vector.jpg"
-          alt="login-logo"
-        />
-      </div>
-
-      <form>
-        <div class="input">
-          <input type="text" id="user" placeholder="User" />
-          <i class="fa fa-user"></i>
-        </div>
-        <div class="input">
-          <input type="password" id="password" placeholder="Password" />
-          <i class="fa fa-eye-slash"></i>
-        </div>
-        <p>Forgot Password ?</p>
-        <input type="button" value="Login" class="login-btn" />
-      </form>
-    </section> -->
-
     <!-- Home Section -->
     <section class="home-section">
+      <!-- Navigation Section -->
       <div class="nav-bar">
         <div class="logo">
           <a href="#">
@@ -57,26 +35,27 @@
           </a>
         </div>
 
-        <nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
           <ul class="nav-left">
-            <li><a href="#"> Home </a></li>
-            <li><a href="#"> Courses </a></li>
-            <li><a href="#"> Event </a></li>
-            <li><a href="#"> Students </a></li>
-            <li><a href="#"> Teachers </a></li>
+            <li><a href="./index.html"> Home </a></li>
+            <li><a href="./courses/courses.html"> Courses </a></li>
+            <li><a href="./events/event.html"> Event </a></li>
+            <li><a href="./students/students.html"> Students </a></li>
+            <li><a href="./teachers/teachers.html"> Teachers </a></li>
           </ul>
           <ul class="nav-right">
             <li class="notify">
               <a href="#"> <i class="fa fa-bell"></i> </a>
               <div class="red"></div>
             </li>
-            <li><a href="#"> LogOut </a></li>
+            <li><a href="./login/login.html"> LogOut </a></li>
           </ul>
         </nav>
       </div>
 
       <!-- Hero Section -->
-
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -88,8 +67,9 @@
             >
               <div class="overlay"></div>
               <div class="hero-content">
-                <h1>Blessed Brains International Academy</h1>
-                <p>
+                <p class="hero-text1">Better education for better</p>
+                <h1>Civil Engineers</h1>
+                <p class="hero-text2">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Illum, debitis? Recusandae odit facilis autem sint, laboriosam
                   vero perspiciatis necessitatibus fugiat, sapiente quos
@@ -97,7 +77,6 @@
                 </p>
                 <div>
                   <button class="btn">button 1</button>
-                  <button class="btn btn2">button 2</button>
                 </div>
               </div>
             </div>
@@ -111,8 +90,8 @@
             >
               <div class="overlay"></div>
               <div class="hero-content">
-                <h1>Blessed Brains International Academy</h1>
-                <p>
+                <h1>Blessed Brains <br />International Academy</h1>
+                <p class="hero-text2">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Illum, debitis? Recusandae odit facilis autem sint, laboriosam
                   vero perspiciatis necessitatibus fugiat, sapiente quos
@@ -120,7 +99,6 @@
                 </p>
                 <div>
                   <button class="btn">button 1</button>
-                  <button class="btn btn2">button 2</button>
                 </div>
               </div>
             </div>
@@ -135,7 +113,7 @@
               <div class="overlay"></div>
               <div class="hero-content">
                 <h1>Blessed Brains International Academy</h1>
-                <p>
+                <p class="hero-text2">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Illum, debitis? Recusandae odit facilis autem sint, laboriosam
                   vero perspiciatis necessitatibus fugiat, sapiente quos
@@ -143,7 +121,6 @@
                 </p>
                 <div>
                   <button class="btn">button 1</button>
-                  <button class="btn btn2">button 2</button>
                 </div>
               </div>
             </div>
@@ -158,7 +135,7 @@
               <div class="overlay"></div>
               <div class="hero-content">
                 <h1>Blessed Brains International Academy</h1>
-                <p>
+                <p class="hero-text2">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Illum, debitis? Recusandae odit facilis autem sint, laboriosam
                   vero perspiciatis necessitatibus fugiat, sapiente quos
@@ -166,7 +143,6 @@
                 </p>
                 <div>
                   <button class="btn">button 1</button>
-                  <button class="btn btn2">button 2</button>
                 </div>
               </div>
             </div>
@@ -174,6 +150,7 @@
         </div>
       </div>
 
+      <!-- SECTION 2 -->
       <div class="section-2">
         <div class="card">
           <i class="fa fa-graduation-cap"></i>
@@ -205,6 +182,7 @@
         </div>
       </div>
 
+      <!-- SECTION 3 -->
       <div class="section-3">
         <div class="overlay"></div>
         <p class="text">
@@ -213,355 +191,186 @@
         </p>
       </div>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-        placeat totam perspiciatis quis error quaerat sequi accusamus. Assumenda
-        quis praesentium fugiat! Debitis maxime mollitia voluptate iure cum.
-        Doloribus, laudantium sit? Dolore fugit voluptate voluptatem animi
-        officiis provident iure reprehenderit perferendis itaque saepe nostrum
-        error pariatur eum, alias maxime, nesciunt dolor consequuntur enim? Hic
-        autem, asperiores animi similique perspiciatis officia illum.
-        Necessitatibus maiores ipsam mollitia nostrum eligendi quisquam est
-        saepe error. Tempora laudantium iste ab recusandae placeat, vero quas
-        rem quae expedita id, dolore voluptates inventore tenetur consectetur
-        consequatur, nesciunt amet! Voluptatibus itaque cupiditate illum rerum
-        reiciendis! Distinctio molestiae nostrum necessitatibus repellat!
-        Repudiandae illum officiis illo praesentium veritatis dicta magnam
-        molestiae ullam officia voluptas quisquam doloribus, voluptatem soluta
-        dolores quae distinctio. Incidunt id iure tempore itaque amet sed
-        voluptate distinctio officia molestias, inventore numquam nemo fuga.
-        Rerum eum vero eos harum facilis. Ratione eveniet cupiditate dolores
-        voluptate similique dignissimos asperiores sint? Eaque enim modi et
-        ratione sequi doloribus obcaecati dolor officiis perspiciatis porro
-        delectus ipsa veritatis, laboriosam, rem optio illum veniam tempora
-        temporibus earum aspernatur. Id maxime eaque molestias facilis dolorum!
-        Fugiat animi ullam nobis magnam corrupti exercitationem consequatur,
-        pariatur similique, cum non maiores voluptatum. Quaerat nihil enim,
-        eveniet nemo aspernatur labore impedit dignissimos in? Itaque mollitia
-        enim debitis excepturi ipsa! Voluptatibus pariatur molestiae natus
-        tenetur impedit. Commodi qui hic voluptatibus, illo natus non fugit
-        nihil nesciunt reprehenderit. Placeat dicta sapiente accusantium facere,
-        facilis delectus recusandae, quibusdam adipisci, asperiores sunt quas!
-        Enim, vero debitis? Illo veritatis tempore, laboriosam officia possimus
-        rerum, soluta facilis iste voluptatibus corporis repudiandae hic
-        repellendus saepe illum aliquam eaque nulla. Aspernatur nesciunt ex,
-        fuga explicabo repudiandae sunt! Assumenda iste recusandae unde adipisci
-        quo praesentium molestias doloremque eaque ducimus consequatur
-        perferendis, ratione minima corrupti facilis ea possimus expedita sint
-        nostrum tenetur totam magnam asperiores animi nemo harum. Cumque. Est
-        molestiae asperiores iusto ipsum, obcaecati incidunt consequuntur quas
-        ratione. Nisi unde maiores quasi iure voluptatibus sequi quos, ea
-        temporibus sit aspernatur eligendi maxime ullam consequuntur animi
-        repellendus quas tempore! Temporibus, mollitia amet placeat repellat,
-        sunt doloribus quos illum ex nulla asperiores esse cum recusandae enim
-        quidem facilis delectus officia reiciendis tempore molestiae. Velit
-        iusto repellendus natus obcaecati, sint quia? Consequatur possimus
-        sapiente distinctio sunt saepe. Vitae aliquam error ut recusandae sit
-        neque eum, officia enim tenetur suscipit consequuntur officiis quo,
-        quod, corrupti soluta? Quos distinctio molestiae adipisci natus enim.
-        Totam nemo rem neque ea deserunt quas accusamus obcaecati, possimus
-        dolorum. Aliquid porro sequi praesentium nobis suscipit at corporis eum
-        autem! Eos in tempore accusamus esse, aperiam eum praesentium
-        blanditiis? Est soluta pariatur culpa cum corporis necessitatibus quia
-        qui saepe expedita, voluptas ab. Temporibus explicabo possimus dolor
-        dolore nam ipsa facere itaque repellendus. Qui nisi facilis amet
-        reiciendis saepe. Debitis! Consectetur molestias fugit inventore,
-        adipisci odit illo blanditiis, ad accusantium hic alias iusto,
-        exercitationem odio ratione eos? Sunt eveniet nostrum ut est minus.
-        Dolores voluptatem suscipit quam adipisci neque consequatur. Optio nisi
-        quos doloremque aperiam veniam, et eius exercitationem, distinctio eos
-        nostrum, pariatur debitis! Sapiente expedita, nostrum obcaecati harum
-        sit fugit modi dolorem explicabo hic doloremque impedit reiciendis
-        officiis accusantium. Quam voluptates similique et earum recusandae.
-        Consectetur rem recusandae architecto eum laboriosam ratione quis?
-        Aliquid tempore illum magni? Odio dolores nam ratione voluptate aliquid
-        ducimus numquam voluptatum fugit possimus ullam! Voluptates nihil
-        expedita impedit neque vero sunt. Sint et, consectetur, eveniet deserunt
-        recusandae accusantium officiis harum veniam, totam illum est accusamus
-        architecto veritatis voluptas! Quia hic cumque officiis rem vitae! Error
-        minus, ratione odit atque quod ea pariatur et soluta velit corrupti
-        perferendis totam numquam magnam doloremque voluptas iusto ex debitis.
-        Harum consequatur laborum voluptas magnam pariatur illo, quo voluptatum!
-        Minima, deleniti harum repellendus dolorem numquam assumenda blanditiis
-        aperiam dolores possimus, adipisci voluptatum. Libero iure quibusdam
-        magnam provident dolore nam, enim omnis excepturi molestias? Itaque,
-        enim mollitia? Exercitationem, officia tempore! Quidem provident
-        consequatur maxime expedita distinctio delectus deleniti vel, earum
-        culpa corrupti quod dolore nobis similique eos dignissimos eveniet in.
-        Non explicabo quo molestias repudiandae laudantium ex magni ipsam
-        veniam. Numquam deserunt tempore nemo ratione ut repellendus quo! Ullam
-        corrupti, natus unde temporibus earum voluptatem quibusdam? Expedita
-        delectus eius, aperiam aliquam tempore reprehenderit explicabo sed
-        placeat temporibus perspiciatis fugiat dignissimos! Reprehenderit cum
-        magnam aperiam similique animi consequatur enim ullam est sed delectus,
-        facere iusto minus. Fugit dolore, laborum assumenda, iste sed nam
-        inventore delectus, in dolores sapiente placeat nihil asperiores. Enim
-        eius, distinctio quo quam consectetur officia expedita impedit
-        reprehenderit fugiat exercitationem explicabo dolor nam! Quis debitis
-        accusamus placeat deleniti dignissimos asperiores tempore possimus, qui,
-        et, in exercitationem beatae esse? Nesciunt, consequatur eos accusantium
-        odit asperiores accusamus. Sed, ullam nam! Quibusdam dicta iure,
-        molestias qui in perferendis mollitia, aliquid inventore veniam sed
-        sunt! Aspernatur totam facilis repellendus! Repudiandae, unde nulla? Eum
-        repellendus necessitatibus optio sapiente nesciunt doloribus, ex aut
-        cupiditate architecto laborum facere quas, veritatis harum nemo
-        recusandae, ut suscipit! Voluptate nam ratione alias. Reiciendis porro
-        unde culpa sapiente accusantium. Sunt, aperiam! Veritatis odio, ducimus
-        aliquid officiis, obcaecati voluptatem, possimus et quo culpa delectus
-        sapiente quas illum. Exercitationem sapiente hic quisquam quam veniam,
-        quo velit, neque error obcaecati saepe corrupti. Enim corrupti molestias
-        facilis maiores suscipit magni ipsam reiciendis molestiae repellendus
-        minima impedit perferendis iusto nostrum necessitatibus dolore
-        consectetur, vero ea illum doloremque consequatur? Numquam dolorum iste
-        praesentium perspiciatis fuga. Debitis dolorum sapiente excepturi
-        doloremque alias aspernatur natus fugit voluptas vero facere. Alias modi
-        corporis a autem molestiae provident itaque iste, minima quidem
-        voluptatum, fuga laborum quas deleniti fugit dignissimos. Perferendis
-        excepturi voluptatum sit rerum provident consectetur corrupti nam
-        voluptas est non molestiae, facilis earum quisquam eos harum fugiat
-        aspernatur. Quasi itaque suscipit obcaecati, sapiente optio placeat enim
-        mollitia voluptatibus! Ipsam aperiam suscipit est necessitatibus
-        accusamus veniam rerum delectus eveniet, consequuntur nobis distinctio
-        blanditiis accusantium eum! Quidem eligendi exercitationem, hic,
-        molestiae perspiciatis ab nobis sapiente optio placeat, dolore nihil
-        quod? Minus libero, ea neque blanditiis veniam fuga natus eius sapiente,
-        illum delectus quisquam aspernatur. Eos eum temporibus laboriosam nihil
-        provident numquam molestiae sapiente officiis, expedita sequi magni
-        veritatis assumenda voluptatibus? Tenetur quisquam in dolore sit
-        dignissimos adipisci. Natus quia expedita similique explicabo vel iusto,
-        maiores inventore corrupti culpa asperiores adipisci vitae ipsam, cum,
-        nisi voluptatum in magni sapiente quasi necessitatibus! Obcaecati fugit
-        quia voluptatum repellat alias beatae et quae qui voluptas dignissimos
-        praesentium corrupti laudantium veniam, expedita in iusto cupiditate.
-        Quos aliquam quas ipsam beatae eligendi dicta excepturi impedit
-        corporis? Autem nisi expedita ipsam ut officia sit quasi sunt quibusdam
-        harum, iure cupiditate, eveniet tempore exercitationem, eaque itaque
-        dignissimos! Laudantium sequi id vel, laborum in eius similique nulla
-        excepturi delectus. Hic eius et aspernatur molestias laboriosam
-        recusandae similique dolores distinctio id omnis quos nesciunt quo animi
-      </p>
-
       <!-- Courses Section -->
       <div class="courses-section">
         <h2>our courses</h2>
-        <div class="swiper mySwiper">
+        <div class="swiper courseSwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="courses">
-                <div class="course">
-                  <img src="./images/pic-1.png" />
-                  <h3>Engineering</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                    molestiae sequi?
-                  </p>
-                </div>
-                <div class="course">
-                  <img src="./images/pic-1.png" />
-                  <h3>Engineering</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                    molestiae sequi?
-                  </p>
-                </div>
-                <div class="course">
-                  <img src="./images/pic-1.png" />
-                  <h3>Engineering</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                    molestiae sequi?
-                  </p>
-                </div>
-              </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
             </div>
-            <div class="swiper-slide">
-              <div class="courses">
-                <div class="course">
-                  <img src="./images/pic-2.png" />
-                  <h3>Engineering</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                    molestiae sequi?
-                  </p>
-                </div>
-                <div class="course">
-                  <img src="./images/pic-2.png" />
-                  <h3>Engineering</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                    molestiae sequi?
-                  </p>
-                </div>
-                <div class="course">
-                  <img src="./images/pic-2.png" />
-                  <h3>Engineering</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                    molestiae sequi?
-                  </p>
-                </div>
-              </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-1.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
             </div>
-            <div class="swiper-slide">
-              <div class="courses">
-                <div class="course">
-                  <img src="./images/pic-3.png" />
-                  <h3>Engineering</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                    molestiae sequi?
-                  </p>
-                </div>
-                <div class="course">
-                  <img src="./images/pic-3.png" />
-                  <h3>Engineering</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                    molestiae sequi?
-                  </p>
-                </div>
-                <div class="course">
-                  <img src="./images/pic-3.png" />
-                  <h3>Engineering</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                    molestiae sequi?
-                  </p>
-                </div>
-              </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-3.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-1.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-1.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-3.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <p>
-        quidem tenetur possimus, vero aut. Magni repudiandae, consequatur iure
-        possimus doloremque provident mollitia asperiores? Explicabo sequi ipsum
-        expedita? Quia consectetur est dolore esse iste iusto enim repellendus
-        quasi, sunt eligendi quaerat quisquam odio laudantium maiores quae
-        neque, consequuntur dicta! Sequi fugiat ab amet ipsa? Natus tenetur
-        molestias, quam quisquam tempora, error molestiae, blanditiis doloremque
-        libero totam veniam explicabo necessitatibus corrupti ipsa facere rem
-        modi. Dolores quaerat ullam molestiae quam aliquam. Voluptate, debitis
-        quae? Ipsam! Officiis quas maiores beatae harum optio. Amet aliquam,
-        voluptatum voluptatibus nulla itaque perspiciatis, qui aliquid dolorem
-        quaerat aut atque esse animi dicta temporibus iusto soluta eveniet rerum
-        recusandae, repellat doloribus. Ad similique minima soluta animi placeat
-        mollitia consequatur, laudantium quaerat hic dolorem expedita, nostrum
-        voluptate quas debitis recusandae. Quam earum at magni dolorem odio
-        voluptatum. Praesentium doloremque pariatur officia doloribus. Aliquam
-        omnis neque dignissimos libero voluptatem adipisci fuga illum? Ab fuga
-        quas corporis ipsa repellat quos tempore obcaecati rem, minima animi
-        exercitationem quae similique non architecto iure autem odio? Nesciunt.
-        Repudiandae ratione reiciendis aut tempora, vel recusandae at minima
-        quibusdam adipisci impedit iure odio laudantium voluptatem dolorum
-        incidunt eaque illum quis voluptatum dicta asperiores ea repellat
-        maiores dignissimos id. Asperiores. Voluptatem, nulla nihil ducimus,
-        illo a dolorem laborum, non magni tempora incidunt praesentium!
-        Asperiores quo ad modi at, facilis et praesentium provident cumque
-        velit, numquam temporibus quasi laborum adipisci enim. Asperiores
-        facilis porro architecto tempora aspernatur maiores quae laboriosam
-        autem praesentium error quidem, repudiandae dolorum magni libero fugiat
-        adipisci vel voluptas corrupti itaque cupiditate incidunt, est beatae
-        ratione! Animi, iusto. Tempore consectetur blanditiis, soluta ipsam
-        repellat, fugit necessitatibus minus hic minima provident qui! Aliquam
-        aperiam animi veniam quidem voluptatibus aliquid, quia totam recusandae
-        a voluptatum perspiciatis iste? Repellendus, voluptate error! Natus aut
-        nostrum repudiandae doloremque, corrupti id consequatur perferendis
-        totam quam illum, fuga, iste soluta nulla delectus? Itaque obcaecati
-        dolores amet facere, beatae, voluptates magni saepe esse nemo eius
-        tempora! Modi voluptatum excepturi consequatur quia qui placeat,
-        eligendi aperiam! Commodi, odio fugit. Nesciunt non, cumque maiores
-        repellendus quis at exercitationem in ducimus enim doloremque aspernatur
-        illo nobis perferendis eaque vel! Deserunt unde, molestiae illo rerum
-        soluta recusandae facilis ratione. Cumque cupiditate saepe cum provident
-        hic aliquid vitae magni eaque! Voluptas consequuntur natus voluptates
-        consectetur. Possimus autem aliquam quas molestias numquam? Quaerat
-        dolorum doloribus, quibusdam ut ex iure nulla voluptatibus? Dolore nam
-        facilis placeat quas omnis consequatur qui molestias sed maiores nobis,
-        adipisci odit, error totam distinctio dolorum ducimus magni repudiandae.
-        Esse repellendus suscipit voluptate consequatur ea totam atque! Officiis
-        quod sunt eius, quibusdam atque vero dicta animi alias vitae ea odio sit
-        adipisci, eum minima possimus repellat fugit voluptate iure. Explicabo
-        repellendus vitae ducimus tenetur necessitatibus placeat ab consectetur
-        expedita incidunt porro libero eveniet laudantium praesentium enim
-        corporis culpa iure, dolor fugiat quisquam ut. Ipsa, atque.
-        Reprehenderit itaque repellat autem. Quae alias harum eligendi deserunt
-        aliquam facilis quisquam corrupti in! Consequuntur et sunt eos
-        praesentium vel, voluptatibus amet nulla corrupti soluta eius,
-        repellendus quam unde tempore distinctio suscipit? Magni, nemo. Dolorem
-        deserunt tempora aliquam illo suscipit possimus rem quaerat nulla quae
-        quibusdam pariatur assumenda maxime est repellat adipisci placeat
-        voluptas excepturi distinctio, sunt natus iure alias? Molestias,
-        officia. Eveniet, consectetur. Rem, quas unde ad nostrum sequi
-        dignissimos vero eum ullam dolorum tempora magni, deleniti voluptates
-        architecto temporibus quidem rerum illo labore consequatur hic quaerat!
-        Eius amet ipsam sit iure reiciendis. Excepturi veritatis blanditiis,
-        voluptates non laudantium ratione sapiente ad dolorem natus, incidunt
-        adipisci asperiores sit numquam. Possimus, ut iusto. Quos, quibusdam.
-        Earum natus nostrum quae, voluptas excepturi autem. Mollitia,
-        accusantium. Sunt nobis voluptates quo sint, reprehenderit facere odio
-        nihil facilis minima quod repudiandae vitae explicabo magnam impedit
-        aspernatur modi obcaecati commodi voluptas dolores quidem consequuntur
-        voluptatibus esse perferendis a? Fugit. Esse perferendis dolorem omnis
-        ullam quos, tenetur, quo soluta dolor delectus minus sunt facilis
-        placeat quaerat nulla velit, hic distinctio sed atque eaque dolores ipsa
-        aliquam modi. Repudiandae, quia corrupti. Quos, ab beatae. Enim
-        aspernatur libero laboriosam molestias omnis, soluta eaque architecto
-        iusto, porro recusandae accusantium harum consequatur. Impedit a ullam
-        libero fugit nisi eos? Repellendus voluptate aspernatur voluptatum
-      </p>
 
-      <div class="picture"></div>
+      <!-- Section 3 -->
+      <div class="section-3">
+        <div class="overlay"></div>
+        <p class="text">
+          sci high welcomes any student in new orleans interested in exploring
+          the fields of science, technology, engineering, and math.
+        </p>
+      </div>
 
-      <p>
-        distinctio! Dolores suscipit commodi inventore iste dolore, libero optio
-        nam laboriosam cupiditate quas laudantium quidem sed? Nisi vitae rem
-        dolor sed id! Rerum consectetur velit cumque. Nesciunt dolorem quisquam
-        eum temporibus. Eveniet perspiciatis quae blanditiis, ipsa, dolorem
-        recusandae necessitatibus porro tempora dolore, neque suscipit commodi
-        temporibus! Libero rerum saepe tempora id, nisi ratione placeat,
-        explicabo odio minus distinctio architecto repudiandae recusandae!
-        Recusandae obcaecati quo, error cumque in aperiam ullam hic consectetur
-        harum molestias, dolorem culpa reiciendis magni iusto blanditiis vero,
-        debitis sed facilis architecto accusamus. Similique doloremque dolore
-        dignissimos assumenda fuga? Itaque, dolores aut inventore nihil
-        perspiciatis libero aperiam doloribus, illum, quis corporis voluptatum
-        pariatur earum quibusdam voluptatibus quod quidem veritatis facilis
-        dolorem! Maxime vitae nesciunt asperiores officiis odio voluptatum
-        commodi? Nam rerum amet distinctio a earum incidunt omnis animi
-        reiciendis recusandae magni. Dignissimos placeat itaque vero facilis
-        fugit a dolorem. Ipsam pariatur ratione expedita temporibus consequuntur
-        tenetur labore, corporis reprehenderit? Nesciunt amet nam et eveniet
-        modi, totam odio aliquid qui animi doloremque. Laudantium quo non
-        molestias, voluptates eaque illo, repudiandae perferendis nesciunt saepe
-        fugit voluptatum hic quis facere, esse ratione. Sapiente, cumque aut.
-        Reprehenderit exercitationem animi velit maiores fuga vel vitae
-        molestiae, ut nesciunt autem facilis quasi ipsum magni nisi in, incidunt
-        cumque quae. Eos quidem eveniet vero qui sapiente. Similique suscipit
-        facere veritatis iste, tenetur at rerum possimus fugiat veniam quibusdam
-        aperiam necessitatibus dolorum a perferendis odit commodi minus debitis,
-        voluptates ab ratione sequi aspernatur! Aspernatur iste vero ipsam?
-        Aliquam excepturi, ut fugiat eum cupiditate suscipit nobis soluta cum
-        eaque obcaecati expedita architecto reiciendis nulla, dignissimos
-        sapiente blanditiis beatae tempora veniam ratione est quisquam
-        accusantium quaerat quo. Quis, sed? Cumque expedita tenetur, aliquid
-      </p>
+
+      <div class="course-mate-section">
+        <h2>Popular Course mates</h2>
+        <div class="swiper courseMateSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img src="./images/pic-2.png" />
+              <h3>Engineering</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
+                molestiae sequi?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="picture-section"></div>
 
       <footer>
         <div class="footer-sec1">
           <p>
-            Our School is ranked a "B" by the Louisiana Department of Education.
+            Our School is ranked a "B" <br />
+            by the Louisiana Department of Education.
           </p>
-          <button>More Information</button>
+          <button>More Info</button>
         </div>
         <div class="footer-sec2">
           <div class="footer-logo">
@@ -591,6 +400,14 @@
             <a href="#"> Students </a>
             <a href="#"> Teachers </a>
           </div>
+          <div>
+            <h3 class="foot-title">Social Links</h3>
+            <a href="#"> Facebook </a>
+            <a href="#"> LinkedIn </a>
+            <a href="#"> Instagram </a>
+            <a href="#"> Twitter </a>
+            <a href="#"> WhatsApp </a>
+          </div>
         </div>
         <div class="footer-sec3">
           <div class="social-links">
@@ -605,36 +422,18 @@
             2022
           </p>
         </div>
+        <div class="footer-sec4">
+          <h3>Belong to the best Department</h3>
+          <p>
+            sci high welcomes any student in new orleans interested in exploring
+            the fields of science, technology, engineering, and math.
+          </p>
+        </div>
       </footer>
     </section>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
-
-    <!-- Hero Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 0,
-        centeredSlides: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        grabCursor: true,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Custom JS link -->
     <script src="./js/app.js"></script>
