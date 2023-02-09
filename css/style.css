@@ -509,7 +509,7 @@ section {
 
 .courses-section .course img {
   width: 100%;
-  height: 12rem;
+  height: 15rem;
   margin-bottom: 1rem;
 }
 
@@ -917,7 +917,7 @@ footer .footer-sec4 {
     text-transform: capitalize;
     color: black;
   }
-  
+
   footer .footer-sec1 {
     flex-direction: column;
     justify-content: start;
