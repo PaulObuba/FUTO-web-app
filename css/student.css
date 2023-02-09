@@ -11,7 +11,74 @@
   justify-content: center;
   align-items: start;
   height: 100%;
-  
+}
+
+/* STUDENTS SECTION */
+
+.students-section {
+  padding: 5rem;
+}
+
+.student {
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.student img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student .content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  padding: 0.1rem 1rem;
+  padding-bottom: 0.5rem;
+  transition: all 0.26s ease;
+  transform: translateY(3rem);
+}
+
+.student:hover .content {
+  transform: translateY(0);
+}
+
+.student .content span {
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+  transition: all 0.26s ease;
+  text-transform: capitalize;
+}
+
+.student .content h3 {
+  font-size: 1.3rem;
+  color: black;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.student .content .share {
+  border-top: 0.1rem solid #aaa;
+  margin-top: 0.2rem;
+  gap: 1rem;
+}
+
+.student .content .share a {
+  font-size: 1.1rem;
+  color: rgba(0, 166, 255, 0.55);
+  transition: all 0.26s ease-in-out;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.student .content .share a:hover {
+  transform: scale(1.2) rotate(360deg);
 }
 
 @media (max-width: 1300px) {
@@ -76,6 +143,11 @@
     font-size: 3rem;
     line-height: 50px;
   }
+
+  /* STUDENTS SECTION */
+  .students-section {
+    padding: 5rem 2rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -83,7 +155,6 @@
     padding: 0;
   }
   .hero-content {
-    background-color: rebeccapurple;
     padding: 8rem 2rem 0 2rem;
   }
 
@@ -96,6 +167,13 @@
     width: 100%;
     margin-bottom: 3rem;
   }
+
+  .counter-section .card-div {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 430px) {
@@ -104,7 +182,6 @@
   }
 
   .hero-content {
-    background-color: #303e4d;
     padding: 0 2rem;
     padding-top: 8rem;
   }
@@ -123,5 +200,23 @@
     font-weight: 300;
     width: 100%;
     margin-bottom: 3rem;
+  }
+
+  .counter-section .card-div {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .counter-section .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-right: none;
+    border-bottom: 1px solid var(--light-white);
+    padding: 1rem;
+    padding-bottom: 3rem;
   }
 }

@@ -2,32 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 
 :root {
+  --light-white: #eff0f1;
   --bg-black-900: #f2f2fc;
   --bg-black-100: #fdf9ff;
   --bg-black-50: #e8dfec;
   --text-black-900: #303e4d;
   --text-black-800: #504e70;
   --text-black-700: rgba(17, 7, 254, 0.7);
-  --prim-color: yellow;
+  --prim-color: rgba(247, 215, 18, 255);
 }
 
 html {
   /* font-size: 80%; */
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
-}
-
-html::-webkit-scrollbar {
-  width: 1rem;
-}
-
-html::-webkit-scrollbar-track {
-  background: white;
-}
-
-html::-webkit-scrollbar-thumb {
-  background: var(--prim-color);
-  border-radius: 50px;
 }
 
 * {
@@ -40,6 +28,11 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+section {
+  background-color: var(--light-white);
+  padding: 4rem 2rem;
+}
+
 .btn {
   display: inline-block;
   font-size: 1.2rem;
@@ -50,6 +43,93 @@ body {
   transition: all 0.25s ease-in-out;
   cursor: pointer;
 }
+
+.sec-h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+
+  position: relative;
+}
+
+.sec-h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: var(--prim-color);
+  border-radius: 50px;
+}
+
+.shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* COUNTER SECTION STARTS */
+
+.counter-section {
+  background-image: linear-gradient(
+      228deg,
+      rgba(0, 166, 255, 0.55),
+      hsla(240, 100%, 20%, 0.8)
+    ),
+    url("../images/login-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 5rem 9rem;
+  opacity: 0.9;
+}
+
+.counter-section .card-div {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.counter-section .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-right: 1px solid var(--light-white);
+  padding: 1rem;
+}
+
+.counter-section .card:last-child {
+  border: none;
+}
+
+.counter-section .card i {
+  font-size: 3.5rem;
+  margin-right: 1rem;
+  color: var(--prim-color);
+}
+
+.counter-section .card .number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+}
+
+.counter-section .card .text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+/* COUNTER SECTION ENDS */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .login {
   position: fixed;
@@ -66,9 +146,9 @@ body {
   background-image: linear-gradient(
       228deg,
       rgba(0, 166, 255, 0.55),
-      hsla(240, 100%, 20%, 0.8)
+      hsla(240, 100%, 20%, 0.7)
     ),
-    url("../images/login-bg.jpg");
+    url("https://www.businesslist.com.ng/img/ng/f/1537812970-96-federal-university-of-technology-owerri.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,7 +156,6 @@ body {
 
 .login .login-logo img {
   width: 15rem;
-  border-radius: 50%;
   margin-top: 5rem;
 }
 
@@ -127,7 +206,7 @@ body {
   width: 0;
   height: 0.3rem;
   border-radius: 2px;
-  background-color: var(--bg-black-900);
+  background-color: var(--prim-color);
   transition: all 0.25s ease-in-out;
 }
 
@@ -162,7 +241,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
   z-index: 100;
   background: linear-gradient(rgba(17, 7, 254, 0.7), rgba(0, 224, 254, 0.7));
 }
@@ -170,24 +249,24 @@ body {
 .nav-bar::after {
   content: "";
   position: absolute;
-  top: 7rem;
+  top: 6.5rem;
   left: 1rem;
   right: 1rem;
-  height: 0.1rem;
+  height: 0.2rem;
   border-radius: 2px;
   background-color: var(--prim-color);
 }
 
 .nav-bar .logo img {
   flex: 0 0 20%;
-  border-radius: 50%;
   width: 5rem;
 }
 
 #menu-btn {
   display: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--white);
+  transition: all 0.26s ease-in-out;
   cursor: pointer;
 }
 
@@ -283,7 +362,7 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(17, 7, 254, 0.7), rgba(0, 224, 254, 0.7));
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .hero-content {
@@ -335,7 +414,7 @@ body {
   font-weight: 300;
   width: 50vw;
   color: var(--bg-black-100);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .hero-content button.btn2 {
@@ -346,72 +425,69 @@ body {
   transform: scale(1.1);
 }
 
-/* Section 2 */
-
-.section-2 {
+.hero-section .card-div {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
   justify-content: space-around;
   align-items: center;
+  gap: 0.5rem;
+  padding: 5rem 9rem;
 
-  padding: 5rem;
+  position: absolute;
+
+  bottom: -3rem;
 }
 
-.section-2 .card {
+.hero-section .card {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  border-radius: 5px;
+  background: linear-gradient(
+    228deg,
+    rgba(0, 166, 255, 0.5),
+    hsla(240, 100%, 20%, 0.5)
+  );
+
+  padding: 2rem;
 }
 
-.section-2 .card i {
+.hero-section .card i {
   font-size: 3.5rem;
   margin-right: 1rem;
   color: var(--prim-color);
 }
 
-.section-2 .card .number {
+.hero-section .card .number {
   font-size: 2rem;
   font-weight: 800;
+  color: white;
 }
 
-.section-2 .card .text {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-/* Section 3 */
-
-.section-3 {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDeIfmUHqx29IglfGXjihpgsMyyr_01lv11g&usqp=CAU");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 8rem;
-
-  position: relative;
-}
-
-.section-3 .text {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--bg-black-900);
-  text-align: center;
-
-  position: relative;
-}
-
-/* COURSES SECTION */
-.courses-section {
-  padding: 2rem;
-}
-
-.courses-section h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
+.hero-section .card .text {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* SECTION 2 */
+
+.sec-2 {
+  padding: 5rem 8rem;
+}
+
+.sec-2 p {
+  font-size: 1.3rem;
+}
+/* SECTION 2 ENDS */
+
+/* COURSES SECTION */
+
+.courses-section {
+  padding: 4rem 8rem;
 }
 
 .courses-section .courses {
@@ -422,19 +498,24 @@ body {
 }
 
 .courses-section .course {
-  
-  background-color: var(--bg-black-50);
-  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  min-height: 25rem;
   padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .courses-section .course img {
   width: 100%;
+  height: 12rem;
   margin-bottom: 1rem;
 }
 
 .courses-section .course h3 {
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
@@ -442,17 +523,47 @@ body {
   color: var(--text-black-800);
 }
 
-/* COURSES Mate SECTION */
-.course-mate-section {
-  padding: 2rem;
+.courses-section button {
+  float: right;
 }
 
-.course-mate-section h2 {
+/* Mission */
+
+.mission-section {
+  background-image: url("https://thumbs.dreamstime.com/b/our-mission-yellow-lightbulb-text-blackboard-193365843.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 8rem;
+
+  position: relative;
+}
+
+.mission-section h2 {
   font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
+  font-weight: 800;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  color: var(--bg-black-900);
+  text-align: center;
+  margin-bottom: 1rem;
+
+  position: relative;
+}
+
+.mission-section .text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--bg-black-900);
+  text-align: center;
+
+  position: relative;
+}
+
+/* COURSES Mate SECTION */
+
+.course-mate-section {
+  padding: 4rem 8rem;
 }
 
 .course-mate-section .course-mate {
@@ -463,24 +574,67 @@ body {
 }
 
 .course-mate-section .course {
-  
-  background-color: var(--bg-black-50);
+  background-color: white;
   text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  min-height: 25rem;
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .course-mate-section .course img {
   width: 100%;
+  height: 14rem;
   margin-bottom: 1rem;
 }
 
 .course-mate-section .course h3 {
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .course-mate-section .course p {
   color: var(--text-black-800);
+}
+
+.course-mate-section button {
+  float: right;
+}
+
+/* Vision Section */
+
+.vision-section {
+  background-image: url("https://previews.123rf.com/images/convisum/convisum1404/convisum140400059/27317592-our-vision-section.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 8rem;
+
+  position: relative;
+}
+
+.vision-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--bg-black-900);
+  text-align: center;
+  margin-bottom: 1rem;
+
+  position: relative;
+}
+
+.vision-section .text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--bg-black-900);
+  text-align: center;
+
+  position: relative;
 }
 
 /* PICTURE SECTION */
@@ -497,57 +651,71 @@ body {
 footer .footer-sec1 {
   display: flex;
   align-items: end;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
+  background-color: white;
   padding: 2rem;
-  background-color: var(--text-black-700);
 }
 
 footer .footer-sec1 p {
-  flex:  0 0 80%;
+  /* flex: 0 0 80%; */
   font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--bg-black-900);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: black;
 }
 
 footer .footer-sec1 button {
   font-size: 1rem;
   font-weight: 600;
   color: white;
-  background-color: var(--text-black-700);
+  background: linear-gradient(
+    228deg,
+    rgba(0, 166, 255, 0.55),
+    hsla(240, 100%, 20%, 0.8)
+  );
   padding: 0.5rem 1rem;
-  margin: auto;
+  cursor: pointer;
 }
 
 footer .footer-sec2 {
   display: flex;
   align-items: start;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 2rem 2rem 0.8rem;
   background-color: rgba(0, 0, 0, 0.918);
+  border-bottom: 1px solid var(--light-white);
   color: white;
 }
 
 footer .footer-sec2 .footer-logo img {
   width: 10rem;
-  border-radius: 50%;
-  
 }
 
 footer .footer-sec2 .foot-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
+  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 footer .footer-sec2 .foot-text {
+  font-size: 0.9rem;
   margin-bottom: 1rem;
   line-height: 23px;
 }
 
 footer .footer-sec2 a {
   display: block;
+  color: gray;
+  font-size: 0.9rem;
   letter-spacing: 0.3rem;
+  transition: all 0.26s ease;
   margin-bottom: 0.3rem;
+}
+
+footer .footer-sec2 a:hover {
+  color: var(--prim-color);
 }
 
 footer .footer-sec3 {
@@ -556,7 +724,7 @@ footer .footer-sec3 {
   color: var(--bg-black-900);
   background-color: rgba(0, 0, 0, 0.918);
   align-items: center;
-  padding: 0 4rem 1rem;
+  padding: 0.8rem 4rem;
 }
 
 footer .footer-sec3 .social-links {
@@ -573,24 +741,27 @@ footer .footer-sec3 .social-links h4 {
 
 footer .footer-sec3 .social-links i {
   display: inline-block;
-  background-color: var(--prim-color);
-  border-radius: 5px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
   transition: all 0.25s ease;
   padding: 0.3rem;
   margin: 0 0.5rem;
+  transition: all 0.26s ease;
 }
 
 footer .footer-sec3 .social-links i:hover {
-  background-color: aquamarine;
+  color: var(--prim-color);
+  transform: rotate(360deg);
+}
+
+footer .footer-sec3 p {
+  font-size: 0.9rem;
 }
 
 footer .footer-sec4 {
-  background-image: linear-gradient(
-      228deg,
-      rgba(0, 166, 255, 0.55),
-      hsla(240, 100%, 20%, 0.8)
-    ),
-    url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Hibbing_High_School_2014.jpg/1200px-Hibbing_High_School_2014.jpg");
+  position: relative;
+  background-image: url("https://www.businesslist.com.ng/img/ng/f/1537812970-96-federal-university-of-technology-owerri.jpg");
   background-position-y: bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -607,20 +778,21 @@ footer .footer-sec4 {
 }
 
 .footer-sec4 h3 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .footer-sec4 p {
   font-size: 1.2rem;
-  font-weight: 700;
+  max-width: 70%;
   text-align: center;
   text-transform: capitalize;
+  position: relative;
 }
-
 
 /* MEdia querys */
 
@@ -650,22 +822,14 @@ footer .footer-sec4 {
     align-items: center;
   }
 
-  /* SECTION 2 */
-  .section-2 {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .section-2 .card {
-    padding: 2rem;
+  .hero-section .card-div {
+    display: none;
   }
 }
 
 @media (max-width: 850px) {
-  #menu-btn {
-    display: inline;
-  }
-  .fa-times {
-    transform: rotate(180deg);
+  .nav-bar {
+    padding: 0.6rem 2rem;
   }
 
   .navbar {
@@ -673,8 +837,9 @@ footer .footer-sec4 {
     top: 99%;
     left: 0;
     right: 0;
-    background: var(--black);
 
+    display: flex;
+    transition: all 0.26s ease-in-out;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
@@ -682,15 +847,94 @@ footer .footer-sec4 {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
-  .navbar a {
-    display: block;
-    font-size: 2rem;
+  .navbar .nav-left,
+  .navbar .nav-right {
+    display: flex;
+    flex-direction: column;
   }
+
+  .navbar .nav-left li,
+  .navbar .nav-right li {
+    display: block;
+    text-align: center;
+    width: 100vw;
+    border-radius: 5px;
+    border-bottom: 1px solid var(--bg-black-50);
+    padding: 0.4rem 0;
+    margin-bottom: 0.3rem;
+  }
+
+  .navbar .nav-left li a,
+  .navbar .nav-right li a {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  .navbar .nav-left li a:hover,
+  .navbar .nav-right li a:hover {
+    background-color: var(--prim-color);
+  }
+
+  #menu-btn {
+    display: inline;
+  }
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  /* SECTION 2 */
+
+  .sec-2 {
+    padding: 3rem;
+  }
+
+  /* Sec-2 Section */
+  /*  COURSES SECTION */
+  /* Couse Mate Section */
+  .sec-2,
+  .courses-section,
+  .course-mate-section {
+    padding: 3rem;
+  }
+
+  /* MISSION SECTION */
+  .mission-section,
+  .vision-section {
+    padding: 5rem 2rem;
+  }
+
+  /* Course Mate Section */
+  .course-mate-section .course {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  /* Footer Section */
+
+  footer .footer-sec1 p {
+    flex: 0 0 80%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+  }
+  
+  footer .footer-sec1 {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  footer .footer-sec1 p {
+    flex: 0 0 100%;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
 }
 
 @media (max-width: 767px) {
   .hero-content {
-    background-color: rebeccapurple;
     padding: 4rem 0 0 1rem;
   }
 
@@ -702,69 +946,70 @@ footer .footer-sec4 {
     margin-bottom: 4rem;
   }
 
-  /* SECTION 2 */
-  /* .section-2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  } */
-
   /* SECTION 3 */
-  .section-3 {
+  .mission-section,
+  .vision-section {
     padding: 5rem 2rem;
   }
 
-  .section-3 .text {
+  .mission-section .text,
+  .vision-section .text {
     font-size: 1.5rem;
     font-weight: 600;
   }
 
   /* FOOTER SECTION */
-  
-footer .footer-sec2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding-top: 4rem;
-}
 
-footer .footer-sec2 .foot-title {
-  font-size: 1.9rem;
-  margin-top: 1rem;
-}
+  footer .footer-sec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 4rem;
+  }
 
-footer .footer-sec3 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1rem;
-  padding: 2rem;
-}
+  footer .footer-sec2 .foot-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
 
-footer .footer-sec4  {
-  height: 40vh;
-  padding: 5rem 2rem 2rem;
-}
+  footer .footer-sec2 .foot-text,
+  footer .footer-sec2 a {
+    font-size: 1.1rem;
+  }
 
-footer .footer-sec4 h3 {
-   font-size: 1.5rem;
-   line-height: 25px;
-}
+  footer .footer-sec3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
 
-footer .footer-sec4 p {
-  font-size: 1rem;
-  font-weight: normal;
-}
+  footer .footer-sec4 {
+    height: 30vh;
+    padding: 5rem 2rem 2rem;
+  }
+
+  footer .footer-sec4 h3 {
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+
+  footer .footer-sec4 p {
+    font-size: 1rem;
+    font-weight: normal;
+  }
 }
 
 @media (max-width: 430px) {
+ 
   .hero-section {
     padding: 0;
   }
 
   .hero-content {
-    background-color: #303e4d;
     padding: 0 2rem;
     padding-top: 8rem;
   }
@@ -790,26 +1035,27 @@ footer .footer-sec4 p {
     grid-template-columns: 1fr;
     justify-content: space-between;
     padding: 1rem;
+    padding-top: 2rem;
   }
 
   .section-2 .card {
-    background-color: var(--prim-color);
     margin-bottom: 1rem;
   }
 
- 
   /* SECTION 3 */
-  .section-3 {
+  .mission-section,
+  .vision-section {
     padding: 5rem 1rem;
   }
 
-  .section-3 .text {
+  .mission-section .text,
+  .vision-section .text {
     font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--bg-black-900);
     text-align: center;
-  
+
     position: relative;
   }
 }

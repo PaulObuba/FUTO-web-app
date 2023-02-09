@@ -23,13 +23,13 @@
   </head>
   <body>
     <!-- Home Section -->
-    <section class="home-section">
+    <div class="home-section">
       <!-- Navigation Section -->
-      <div class="nav-bar">
+      <section class="nav-bar">
         <div class="logo">
           <a href="#">
             <img
-              src=" https://static.vecteezy.com/system/resources/previews/006/174/322/original/academy-badge-logo-free-vector.jpg "
+              src="./images/logo.png "
               alt="logo"
             />
           </a>
@@ -39,24 +39,24 @@
 
         <nav class="navbar">
           <ul class="nav-left">
-            <li><a href="./index.html"> Home </a></li>
-            <li><a href="./courses/courses.html"> Courses </a></li>
-            <li><a href="./events/event.html"> Event </a></li>
-            <li><a href="./students/students.html"> Students </a></li>
-            <li><a href="./teachers/teachers.html"> Teachers </a></li>
+            <li><a href="#"> Home </a></li>
+            <li><a href="./courses.html"> Courses </a></li>
+            <li><a href="./event.html"> Event </a></li>
+            <li><a href="./students.html"> Students </a></li>
+            <li><a href="./teachers.html"> Teachers </a></li>
           </ul>
           <ul class="nav-right">
             <li class="notify">
               <a href="#"> <i class="fa fa-bell"></i> </a>
               <div class="red"></div>
             </li>
-            <li><a href="./login/login.html"> LogOut </a></li>
+            <li><a href="./login.html"> LogOut </a></li>
           </ul>
         </nav>
-      </div>
+      </section>
 
       <!-- Hero Section -->
-      <div class="swiper mySwiper">
+      <section class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div
@@ -78,6 +78,29 @@
                 <div>
                   <button class="btn">button 1</button>
                 </div>
+                <div class="card-div">
+                  <div class="card">
+                    <i class="fa fa-graduation-cap"></i>
+                    <div class="card-content">
+                      <p class="number">160+</p>
+                      <p class="text">Courses</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <i class="fa fa-user"></i>
+                    <div>
+                      <p class="number">160+</p>
+                      <p class="text">Students</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <i class="fa fa-chalkboard-user"></i>
+                    <div>
+                      <p class="number">160+</p>
+                      <p class="text">Teachers</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -85,12 +108,12 @@
             <div
               class="hero-section"
               style="
-                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjxEm7Ft9W0Hima10LPsRzTXajx2ZspvdAw&usqp=CAU');
+                background-image: url('https://media.istockphoto.com/id/1171063170/photo/young-female-graphic-designer-creating-new-project-sitting-on-floor.jpg?s=612x612&w=0&k=20&c=57avR6pKcQx_o-f0PdTV_DVoRMx7eqCaFb6zTelNqI4=');
               "
             >
               <div class="overlay"></div>
               <div class="hero-content">
-                <h1>Blessed Brains <br />International Academy</h1>
+                <h1> Federal University <br/>of Technology Owerri</h1>
                 <p class="hero-text2">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Illum, debitis? Recusandae odit facilis autem sint, laboriosam
@@ -107,12 +130,15 @@
             <div
               class="hero-section"
               style="
-                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_hVkOtVELxJdw8Ck_yn6fRHR8i0uIBMBMg&usqp=CAU');
+                background-image: url('https://admissions.usf.edu/hs-fs/hubfs/adm-blog-spring-reading-list-college-students-inline.jpg?width=740&name=adm-blog-spring-reading-list-college-students-inline.jpg');
               "
             >
               <div class="overlay"></div>
               <div class="hero-content">
-                <h1>Blessed Brains International Academy</h1>
+                <h1>
+                  WHAT STARTS HERE <br />
+                  CHANGES THE WORLD
+                </h1>
                 <p class="hero-text2">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Illum, debitis? Recusandae odit facilis autem sint, laboriosam
@@ -129,12 +155,12 @@
             <div
               class="hero-section"
               style="
-                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWPekZDXUWnDVSc-ID9HsVW-wGX0jl-7iGQ&usqp=CAU');
+                background-image: url('https://media.istockphoto.com/id/1248521713/photo/exhausted-and-tired-black-girl-uses-laptop-writes-essay-study-for-class-assignment-students.jpg?s=612x612&w=0&k=20&c=TQE-zu4P3KOEOX0303hB1Px760rhOBoOMcUPPkQVzas=');
               "
             >
               <div class="overlay"></div>
               <div class="hero-content">
-                <h1>Blessed Brains International Academy</h1>
+                <h1> Federal University <br/>of Technology Owerri</h1>
                 <p class="hero-text2">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Illum, debitis? Recusandae odit facilis autem sint, laboriosam
@@ -148,56 +174,42 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- SECTION 2 -->
-      <div class="section-2">
-        <div class="card">
-          <i class="fa fa-graduation-cap"></i>
-          <div class="card-content">
-            <p class="number">160+</p>
-            <p class="text">Courses</p>
-          </div>
-        </div>
-        <div class="card">
-          <i class="fa fa-user"></i>
-          <div>
-            <p class="number">160+</p>
-            <p class="text">Students</p>
-          </div>
-        </div>
-        <div class="card">
-          <i class="fa fa-chalkboard-user"></i>
-          <div>
-            <p class="number">160+</p>
-            <p class="text">Teachers</p>
-          </div>
-        </div>
-        <div class="card">
-          <i class="fa fa-face-smile"></i>
-          <div>
-            <p class="number">160+</p>
-            <p class="text">Satisfaction</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- SECTION 3 -->
-      <div class="section-3">
-        <div class="overlay"></div>
+      <!-- About Section -->
+      <section class="about-section sec-2">
+        <h2 class="sec-h2">About Us</h2>
         <p class="text">
-          sci high welcomes any student in new orleans interested in exploring
-          the fields of science, technology, engineering, and math.
+          We are a public school intrested in any student exploring the field of
+          sicence, technology, engineering and math.
         </p>
-      </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vel a
+          corrupti temporibus repellendus facere fugiat? Totam consequuntur
+          rerum necessitatibus, eos pariatur corporis voluptates, saepe aliquam
+          maxime accusamus nam voluptatum! Nam provident cupiditate rerum nihil..
+        </p>
+      </section>
+
+      <!-- MISSION SECTION  -->
+      <section class="mission-section">
+        <div class="overlay"></div>
+        <h2>Mission</h2>
+        <p class="text">
+          Accelerating our progress as international Civil Engineering leader to
+          fulfill our academic and professional passions.
+        </p>
+      </section>
 
       <!-- Courses Section -->
-      <div class="courses-section">
-        <h2>our courses</h2>
+      <section class="courses-section">
+        <h2 class="sec-h2">Popular courses</h2>
         <div class="swiper courseSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
+              <img
+                src="https://s40424.pcdn.co/in/wp-content/uploads/2022/07/digital-marketing-courses.jpg"
+              />
               <h3>Engineering</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -206,7 +218,9 @@
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-1.png" />
+              <img
+                src="https://s40424.pcdn.co/in/wp-content/uploads/2022/02/ISB-ITPM-650x314.jpg"
+              />
               <h3>Engineering</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -215,7 +229,9 @@
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
+              <img
+                src="https://www.nist.gov/sites/default/files/images/2019/09/25/tech_transfer.jpg"
+              />
               <h3>Engineering</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -224,7 +240,9 @@
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-3.png" />
+              <img
+                src="https://elearningindustry.com/wp-content/uploads/2015/10/learning-technologies-fundamentals-part-1.jpg"
+              />
               <h3>Engineering</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -233,7 +251,9 @@
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-1.png" />
+              <img
+                src="https://www.ed2go.com/common/images/1/16255/teacher-websites-t/jpg.jpg"
+              />
               <h3>Engineering</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -242,7 +262,9 @@
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
+              <img
+                src="https://img.freepik.com/premium-photo/using-online-connect-technology-business-education-communication_1421-3950.jpg"
+              />
               <h3>Engineering</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -251,7 +273,9 @@
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-1.png" />
+              <img
+                src="https://bioprocessintl.com/wp-content/uploads/2015/03/13-3-Dennett-Photo1.jpg"
+              />
               <h3>Engineering</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -260,7 +284,9 @@
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-3.png" />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdo9vEE0xHhIlMbMwsw-k3SXhwUnf4id23RA&usqp=CAU"
+              />
               <h3>Engineering</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -269,105 +295,126 @@
               </p>
             </div>
           </div>
+          <button class="btn"><a href="./courses.html"> View more </a></button>
         </div>
-      </div>
+      </section>
 
-      <!-- Section 3 -->
-      <div class="section-3">
+      <!-- VISION SECTION -->
+      <section class="vision-section">
         <div class="overlay"></div>
+        <h2>Vision</h2>
         <p class="text">
-          sci high welcomes any student in new orleans interested in exploring
-          the fields of science, technology, engineering, and math.
+          Accelerating our progress as international Civil Engineering leader to
+          fulfill our academic and professional passions.
         </p>
-      </div>
+      </section>
 
-
-      <div class="course-mate-section">
-        <h2>Popular Course mates</h2>
+      <!-- Course Mate Section -->
+      <section class="course-mate-section">
+        <h2 class="sec-h2">Departmental Course mates</h2>
         <div class="swiper courseMateSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
-              <h3>Engineering</h3>
+              <img
+                src="https://media.istockphoto.com/id/1351445530/photo/african-student-sitting-in-classroom.jpg?s=612x612&w=0&k=20&c=1ICaZ03iFLzDmxfBkfDkmBGSgj1SDEpsM3eSDgB1KBk="
+              />
+              <h3>Name/ nick name</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                molestiae sequi?
+                Voluptate, labore. Itaque, modi suscipit.
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
-              <h3>Engineering</h3>
+              <img
+                src="https://media.istockphoto.com/id/883657418/photo/cant-wait-to-get-the-semester-started.jpg?b=1&s=170667a&w=0&k=20&c=eGTBavaKBpo4JYp3pQi1YoMM7sKlR_LxysWf9QtIEKY="
+              />
+              <h3>Name/ nick name</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                molestiae sequi?
+                Voluptate, labore. Itaque, modi suscipit.
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
-              <h3>Engineering</h3>
+              <img
+                src="https://media.istockphoto.com/id/1006213126/photo/beautiful-young-woman-with-books-and-digital-tablet-standing-at-window-in-campus.jpg?s=612x612&w=0&k=20&c=KIUPV1SrnQDVxq19Li7-6b7ncSpdm9iPq4aNKjIzqcA="
+              />
+              <h3>Name/ nick name</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                molestiae sequi?
+                Voluptate, labore. Itaque, modi suscipit.
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
-              <h3>Engineering</h3>
+              <img
+                src="https://www.smu.edu/-/media/Images/News/2020/Winter/iStock-509916803.jpg?h=666&iar=0&w=1000&hash=611FF3A2A6A50CE710DE06568D8B68AA"
+              />
+              <h3>Name/ nick name</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                molestiae sequi?
+                Voluptate, labore. Itaque, modi suscipit.
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
-              <h3>Engineering</h3>
+              <img
+                src="https://t4.ftcdn.net/jpg/03/43/56/01/360_F_343560107_3hbbBIEppQmOkr14pUwk2EbIEYDT7lV0.jpg"
+              />
+              <h3>Name/ nick name</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                molestiae sequi?
+                Voluptate, labore. Itaque, modi suscipit.
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
-              <h3>Engineering</h3>
+              <img
+                src="https://nationalcenter.org/project21/wp-content/uploads/sites/4/2018/06/black-college-student.jpg"
+              />
+              <h3>Name/ nick name</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                molestiae sequi?
+                Voluptate, labore. Itaque, modi suscipit.
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
-              <h3>Engineering</h3>
+              <img
+                src="https://www.blackhistorymonth.org.uk/wp-content/uploads/2021/01/shutterstock_763464100-623x438.jpg"
+              />
+              <h3>Name/ nick name</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                molestiae sequi?
+                Voluptate, labore. Itaque, modi suscipit.
               </p>
             </div>
             <div class="swiper-slide course">
-              <img src="./images/pic-2.png" />
-              <h3>Engineering</h3>
+              <img
+                src="https://thumbs.dreamstime.com/b/african-american-college-student-29039693.jpg"
+              />
+              <h3>Name/ nick name</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, labore. Itaque, modi suscipit. Earum accusamus
-                molestiae sequi?
+                Voluptate, labore. Itaque, modi suscipit.
+              </p>
+            </div>
+            <div class="swiper-slide course">
+              <img
+                src="https://cdn.24.co.za/files/Cms/General/d/8655/878c8fbc58e14536b2c8dc73b25ef88c.jpg"
+              />
+              <h3>Name/ nick name</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, labore. Itaque, modi suscipit.
               </p>
             </div>
           </div>
+          <button class="btn"><a href="./students.html"> View more </a></button>
         </div>
-      </div>
+      </section>
 
-      <div class="picture-section"></div>
+      <section class="picture-section"></section>
 
       <footer>
         <div class="footer-sec1">
           <p>
-            Our School is ranked a "B" <br />
+            Our School is ranked "B" <br />
             by the Louisiana Department of Education.
           </p>
           <button>More Info</button>
@@ -376,7 +423,7 @@
           <div class="footer-logo">
             <a href="#">
               <img
-                src=" https://static.vecteezy.com/system/resources/previews/006/174/322/original/academy-badge-logo-free-vector.jpg "
+                src="./images/logo.png"
                 alt="logo"
               />
             </a>
@@ -423,6 +470,7 @@
           </p>
         </div>
         <div class="footer-sec4">
+          <div class="overlay"></div>
           <h3>Belong to the best Department</h3>
           <p>
             sci high welcomes any student in new orleans interested in exploring
@@ -430,7 +478,7 @@
           </p>
         </div>
       </footer>
-    </section>
+    </div>
 
     <!-- Initialize Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

@@ -31,39 +31,38 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// Courses Swiper
+// Courses Swiper 
+  var swiper = new Swiper(".courseSwiper", {
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    grabCursor: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      550: {
+        slidesPerView: 2,
+      },
+      791: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+  });
 
-var swiper = new Swiper(".courseSwiper", {
-  spaceBetween: 30,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-  grabCursor: true,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    550: {
-      slidesPerView: 2,
-    },
-    791: {
-      slidesPerView: 3,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
-  },
-});
 
-// Courses Mate Swiper
-
+// Course Mate Swiper
 var swiper = new Swiper(".courseMateSwiper", {
   effect: "coverflow",
   autoplay: {
@@ -112,3 +111,10 @@ eyeToggler.addEventListener("click", () => {
     password.setAttribute("type", "password");
   }
 });
+
+// 
+function courseSection(e) {
+  e.preventDefault()
+  window.location = "courses.html";
+  console.log("y this thing no won work??")
+}
