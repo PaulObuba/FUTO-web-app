@@ -38,7 +38,7 @@
   right: 0;
   left: 0;
   background-color: white;
-  padding: 0.1rem 1rem;
+  padding: 0.8rem 1rem 0.1rem;
   padding-bottom: 0.5rem;
   transition: all 0.26s ease;
   transform: translateY(3rem);
@@ -50,14 +50,14 @@
 
 .teacher .content span {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-top: 0.5rem;
   transition: all 0.26s ease;
   text-transform: capitalize;
 }
 
 .teacher .content h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: black;
   text-transform: capitalize;
   position: relative;
@@ -70,7 +70,7 @@
 }
 
 .teacher .content .share a {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: rgba(0, 166, 255, 0.55);
   transition: all 0.26s ease-in-out;
   padding-top: 1rem;
@@ -78,7 +78,7 @@
 }
 
 .teacher .content .share a:hover {
-  transform: scale(1.2) rotate(360deg);
+  transform: scale(1.2);
 }
 
 @media (max-width: 1300px) {

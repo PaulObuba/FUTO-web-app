@@ -8,6 +8,17 @@ menu.onclick = () => {
   navbar.classList.toggle("active");
 };
 
+window.addEventListener("scroll", () => {
+  menu.classList.remove("fa-times");
+  navbar.classList.remove("active");
+})
+
+// function courseSection(e) {
+//   e.preventDefault();
+//   window.location = "courses.html";
+//   console.log("y this thing no won work??");
+// }
+
 //  Initialize Swiper
 
 //  Hero Swiper
@@ -31,36 +42,35 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// Courses Swiper 
-  var swiper = new Swiper(".courseSwiper", {
-    spaceBetween: 30,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
+// Courses Swiper
+var swiper = new Swiper(".courseSwiper", {
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  grabCursor: true,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
-    grabCursor: true,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    550: {
+      slidesPerView: 2,
     },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      550: {
-        slidesPerView: 2,
-      },
-      791: {
-        slidesPerView: 3,
-      },
-      1200: {
-        slidesPerView: 4,
-      },
+    791: {
+      slidesPerView: 3,
     },
-  });
-
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
 
 // Course Mate Swiper
 var swiper = new Swiper(".courseMateSwiper", {
@@ -96,25 +106,3 @@ var swiper = new Swiper(".courseMateSwiper", {
     },
   },
 });
-
-// Login Password Eye Toggler
-
-const eyeToggler = document.querySelector(".fa-eye-slash");
-const password = document.querySelector("#password");
-
-eyeToggler.addEventListener("click", () => {
-  eyeToggler.classList.toggle("fa-eye");
-
-  if (password.getAttribute("type") === "password") {
-    password.setAttribute("type", "text");
-  } else {
-    password.setAttribute("type", "password");
-  }
-});
-
-// 
-function courseSection(e) {
-  e.preventDefault()
-  window.location = "courses.html";
-  console.log("y this thing no won work??")
-}
