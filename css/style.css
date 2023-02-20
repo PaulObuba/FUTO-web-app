@@ -420,7 +420,7 @@ section {
   font-weight: 300;
   width: 50vw;
   color: var(--bg-black-100);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .hero-content button.btn2 {
@@ -664,7 +664,6 @@ footer .footer-sec1 {
 }
 
 footer .footer-sec1 p {
-  /* flex: 0 0 80%; */
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: capitalize;
