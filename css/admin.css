@@ -142,26 +142,105 @@
 .table-section {
   font-family: "Nunito", sans-serif;
   position: relative;
-  background-color: red;
+  background-color: rgb(223, 213, 213);
 }
 
 .table-container {
   position: absolute;
-  top: 5rem;
+  top: 0rem;
   left: 270px;
   bottom: 0;
   right: 0;
   height: 100%;
-  padding: 0 1rem;
 }
 
-.table-container .table-header {
+.admin-head {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  color: white;
+  background-color: #393939;
+  padding: 0.5rem 1rem;
 }
 
+.admin-head button {
+  padding: 0.2rem 0.5rem;
+}
+
+.table-container .admin-content {
+  background-color: white;
+  margin: 4rem 2rem;
+}
+
+.table-container .admin-content .header {
+  padding: 1rem;
+  border-bottom: 1px solid #393939;
+}
+
+.table-container .admin-content .header h2 {
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.table-container .admin-content .cards {
+  display: flex;
+  background-color: rebeccapurple;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.table-container .admin-content .cards .card {
+  background-color: gainsboro;
+  border-radius: 8px;
+  padding: 1.2rem;
+  padding-right: 4rem;
+}
+
+.table-container .admin-content .cards .card .icon {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 0.5rem;
+}
+
+.table-container .admin-content .cards .card .icon i {
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 1.4rem;
+}
+.table-container .admin-content .cards .card .icon .color1 {
+  background-color: red;
+} 
+.table-container .admin-content .cards .card .icon .color2 {
+  background-color: yellow;
+}
+.table-container .admin-content .cards .card .icon .color3 {
+  background-color: green;
+}
+.table-container .admin-content .cards .card .icon .color4 {
+  background-color: burlywood;
+}
+.table-container .admin-content .cards .card .icon .color5 {
+  background-color: blueviolet;
+}
+
+.table-container .admin-content .cards .card .icon p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.table-container .admin-content .cards .card .text {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* 
 .table-container .table-header button {
   font-size: 1rem;
   padding: 0.5rem;
@@ -212,4 +291,4 @@ tr td i {
 
 tr td i:hover {
   background-color: var(--light-white);
-}
+} */
